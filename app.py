@@ -10,7 +10,7 @@ from threading import Lock
 
 app = Flask(__name__)
 CORS(app)
-socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
+socketio = SocketIO(app, cors_allowed_origins="https://courageous-boba-b6a7dd.netlify.app/", async_mode='eventlet')
 
 # Store subprocess instances and their output queues
 subprocess_map = {}
